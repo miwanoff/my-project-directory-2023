@@ -2,8 +2,11 @@
   "name": "my-project-directory",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/script.js",
   "scripts": {
+    "start": "nodemon --exec babel-node src/script.js",
+    "build": "babel src --out-dir dist",
+    "serve": "node dist/script.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
